@@ -67,7 +67,7 @@ function handleCoupon(){
     var totalPrice=parseFloat(totalPriceField.innerText);
     var coupon=couponField.value;
     
-    if(totalPrice>=200 && coupon=='SELL20'){
+    if(totalPrice>=200 && coupon=='SELL200'){
         var discount = ((totalPrice*20)/100).toFixed(2);
         discountPriceField.innerText=`${discount}`;
         finalPriceField.innerText=`${(totalPrice-discount).toFixed(2)}`;
